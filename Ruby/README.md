@@ -18,7 +18,12 @@ Don't forget that you are in a fully blown ruby interpreter with the current sta
 
 ### The Challenge
 
-Alright then, let's take a look at the challenge. The function you are having is an object converter, iterating through the items of a list and placing them in a specific format in a hash. Its ouput should give a hash mapping the name to their age, if the age is given (it comes from an external API). A second function call down the line depends on that to show nice ages per name on a website. Unfortunately for reasons unclear, it doesn't show the age but their name again. The author of the other part of the code claims that the dictionary you give them doesn't actually have the age as values.
+Alright then, let's take a look at the challenge. The function you are having is an object converter, iterating through
+the items of a list and placing them in a specific format in a hash. Its ouput should give a hash mapping the name to
+their age, if the age is given (it comes from an external API). A second function call down the line depends on that
+to show nice ages per name on a website. Unfortunately for reasons unclear, it doesn't show the age but their name
+again. The author of the other part of the code claims that the dictionary you give them doesn't actually have the
+age as values.
 
 You can execute the code with ruby directly: `ruby debug-challenge.rb` – if this fails, you need to install `pry` first (`gem pry`). The output shows that this is indeed the case. Uncomment the `pry.binding` in Line 10 and use the above mentioned commands to move around in the execution and examine, what goes wrong and when. Then propose a fix, try to fix it and run it again. Repeat until fixed.
 

@@ -1,4 +1,5 @@
-require 'pry'
+
+require 'byebug'
 people = [{name: "Anna", age: 12},
           {name: "Kim", age: 18},
           {name: "Peter"},
@@ -12,11 +13,10 @@ people = [{name: "Anna", age: 12},
 people_with_age_map = {}
 
 
-#pry.binding
-
 people.each do |person|
-  if age = person[:age] && name = person[:name]
+  if (age = person[:age]) && (name = person[:name])
    people_with_age_map[name] = age
+
   end
 end
 
